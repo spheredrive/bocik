@@ -36,11 +36,16 @@ client.on("ready", () => {
     activities: [
       {
         name: "Welcome To Happi Spark Studio",
-        type: 3 // 3 = Watching
+        type: 3 // Watching
+      },
+      {
+        name: "This is official nekohappi bot for support and help with happi spark studio :)",
+        type: 4 // Custom Status (opis pod nickiem)
       }
     ]
-  }).catch(err => console.error("setPresence error:", err));
+  });
 });
+
 
 // Prosty handler komend
 client.on("messageCreate", (msg) => {
