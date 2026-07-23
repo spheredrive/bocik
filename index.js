@@ -34,17 +34,11 @@ client.on("ready", () => {
   client.user.setPresence({
     status: "online",
     activities: [
-      {
-        name: "Welcome To Happi Spark Studio",
-        type: 3 // Watching
-      },
-      {
-        name: "This is official nekohappi bot for support and help with happi spark studio :)",
-        type: 4 // Custom Status (opis pod nickiem)
-      }
+      { name: "Welcome To Happi Spark Studio", type: 3 } // 3 = Watching
     ]
-  });
+  }).catch(console.error);
 });
+
 
 
 // Prosty handler komend
